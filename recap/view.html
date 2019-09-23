@@ -1,0 +1,23 @@
+<h1>recap</h1>
+
+<div>
+	test
+</div>
+
+<div>
+	{{range .Dirs}}
+		<p>{{.}}</p>
+	{{end}}
+</div>
+
+
+<select> 
+	{{range $key, $value := .}}
+	  <option value="{{ $value }}">{{ $key }}</option>
+	{{end}}
+ 
+	{{range .Dirs}}
+    	<option value="{{ . }}">{{ . }}</option>	    
+    {{end}}
+ 
+</select>
